@@ -17,12 +17,24 @@ texto_2 = '7'
 # se utiliza el operador mayor o menor con Strings (textos)
 # Imprima en pantalla según corresponda
 
+if texto_1 > texto_2:
+    print('La palabra:{} ,es mayor que la palabra:{}'.format(texto_1,texto_2))
+else:
+    print('La palabra:{} ,es mayor que la palabra:{}'.format(texto_2,texto_1))
+
 # 2-Transforma esas variables tipo texto en variables numéricas con (int)
 # y almacénalas en nuevas variables.
 # Compare las nuevas variables para ver cual es mayor o menor
 # utilizando los operadores correspondientes
 # ¿Cuál de las nuevas variables es mayor?
 # Imprima en pantalla según corresponda
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
+
+if numero_1 > numero_2:
+    print('El numero:{} es mayor que el numero:{}'.format(numero_1,numero_2))
+else:
+    print('El numero:{} es mayor que el numero:{}'.format(numero_2,numero_1))
 
 # Para pensar!
 # ¿Por qué cree que texto_2 es mayor a texto_1?
@@ -32,3 +44,6 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+#Repuesta: Porque al comparar string, compara el numero ascii y en este caso el numero ascii del texto_2 es mayor 
+# que el del texto_1

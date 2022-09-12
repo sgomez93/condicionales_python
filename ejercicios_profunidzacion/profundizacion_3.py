@@ -30,3 +30,28 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+temperatura_1 = float(input('Ingrese el valor de la primera Temperatura:\n'))
+temperatura_2 = float(input('Ingrese el valor de la segunda Temperatura:\n'))
+temperatura_3 = float(input('Ingrese el valor de la tercer Temperatura:\n'))
+
+#Maxima temperatura
+if (temperatura_1 > temperatura_2) and (temperatura_1 > temperatura_3):
+    print('La maxima temperatura es:', temperatura_1)
+elif (temperatura_2 > temperatura_1) and (temperatura_2 > temperatura_3):
+    print('La maxima temperatura es:', temperatura_2)
+else:
+    print('La maxima temperatura es:', temperatura_3)
+
+#Minima temperatura
+if (temperatura_1 < temperatura_2) and (temperatura_1 < temperatura_3):
+    print('La minima temperatura es:', temperatura_1)
+elif (temperatura_2 < temperatura_1) and (temperatura_2 < temperatura_3):
+    print('La minima temperatura es:', temperatura_2)
+else:
+    print('La minima temperatura es:', temperatura_3)
+
+#Temperatura promedio 
+temperatura_prom = (temperatura_1 + temperatura_2 + temperatura_3) / 3
+print('La temperatura promedio es:', round(temperatura_prom,1)) #imprimo la temperatura promedio y con round()
+#la redondeo a un solo decimal despues de la coma
